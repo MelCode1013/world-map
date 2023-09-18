@@ -1,0 +1,40 @@
+#map-page {
+    display: flex;
+    justify-content: center;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+}
+
+#country-info h2 {
+    background-color: #00171F;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0;
+}
+
+#country-info {
+    background-color: rgba(0, 52, 89,.8);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    max-height: 400px;
+    margin-top: 200px;
+    margin-right: 20px;
+}
