@@ -17,4 +17,9 @@ export class WorldMapServiceService {
     const countryDetailUrl = `${this.apiUrl}/${countryCode}?format=json`;
     return this.http.get<any>(countryDetailUrl);
   }
+
+  getdata() : Observable<any> {
+    return this.http.get(`${this.apiUrl}/?format=json`)
+    console.log(this.http.get(`${this.apiUrl}/?format=json`))
+  }
 }

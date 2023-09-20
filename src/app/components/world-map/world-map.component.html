@@ -757,8 +757,15 @@
                 title="Zimbabwe" id="ZW" />
         </svg>
     </div>
-    <section id="country-info">
+    <section id="country-info" *ngIf="countryData">
         <h2>Country Information</h2>
-
+        <ul>
+            <li>{{countryData.name}}</li>
+            <li>{{countryData.capital}}</li>
+            <li>{{countryData.region}}</li>
+            <li>{{countryData.incomeLevel}}</li>
+            <li>{{countryData.latitude}}</li>
+            <li>{{countryData.longitude}}</li>
+        </ul>
     </section>
 </section>
