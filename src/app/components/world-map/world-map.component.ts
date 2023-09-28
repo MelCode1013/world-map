@@ -27,7 +27,7 @@ constructor(private elementRef: ElementRef, private worldMapService: WorldMapSer
           // Extract the country data from the response
           const countryArray = data[1];
           const desiredCountry = countryArray.find((country: any) => country.iso2Code === this.countryCode);
-          console.log(countryArray)
+          console.log(countryArray) //ensuring the proper data is being pulled
           console.log(desiredCountry)
 
           if (desiredCountry) {
@@ -42,16 +42,12 @@ constructor(private elementRef: ElementRef, private worldMapService: WorldMapSer
     });
       });
 
-      
-
       grabMap[i].addEventListener('mouseout', (event: MouseEvent) => {
         const targetPath = event.target as HTMLElement;
         targetPath.style.fill = '#00171F'});
       }
     }
     ngOnInit() {
-
-    
     this.worldMapService.getdata().subscribe(res => {
         this.countryData = res;
     });
