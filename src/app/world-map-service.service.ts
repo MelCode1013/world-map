@@ -20,6 +20,5 @@ export class WorldMapServiceService {
 
   getdata() : Observable<any> {
     return this.http.get(`${this.apiUrl}/?format=json`)
-    console.log(this.http.get(`${this.apiUrl}/?format=json`))
   }
 }
