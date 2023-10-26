@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/world-map",
+    "public": "src/index",
     "ignore": [
       "firebase.json",
       "**/.*",
