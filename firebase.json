@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/world-map",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }
